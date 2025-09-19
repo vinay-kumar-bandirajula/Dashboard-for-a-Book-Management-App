@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Base URL 
-const API_URL = "https://crudcrud.com/api/d9f2bc9e52004539bb5b15ed694e19a0/books";
+const API_URL = process.env.REACT_APP_API_URL;
 
 // GET /books - Fetch all books
 export const getBooks = async () => {
