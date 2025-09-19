@@ -1,0 +1,502 @@
+/* Book Dashboard Custom Styles */
+
+.book-dashboard {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Dashboard Header Styles */
+.dashboard-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.2);
+}
+
+.dashboard-title {
+    color: white;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Enhancements */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Table Enhancements */
+.table-dark th {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+}
+
+.table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9ff !important;
+    /* transform: scale(1.01); */
+}
+
+/* Book Title Styling */
+.book-title {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 1.05rem;
+}
+
+/* Status Badge Styling */
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.status-badge.available,
+.status-badge.issued {
+    color: black;
+}
+
+/* Genre Badge Styling */
+.genre-badge {
+    color: black;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Button Enhancements */
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-outline-secondary {
+    border: 2px solid #74b9ff;
+    color: #74b9ff;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+    border-color: #74b9ff;
+    transform: scale(1.05);
+}
+
+.btn-outline-danger {
+    border: 2px solid #fd79a8;
+    color: #fd79a8;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Form Styling */
+.form-control,
+.form-select {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+/* Modal Enhancements */
+.modal-content {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 20px 30px;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.modal-body {
+    padding: 30px;
+    background: #f8f9fa;
+}
+
+.modal-footer {
+    background: white;
+    border: none;
+    padding: 20px 30px;
+}
+
+.btn-close {
+    color: white;
+    opacity: 0.8;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+/* Alert Enhancements */
+.alert {
+    border: none;
+    border-radius: 15px;
+    padding: 15px 20px;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.alert-success {
+    background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+    color: white;
+}
+
+.alert-danger {
+    background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);
+    color: white;
+}
+
+.alert .btn-close {
+    color: white;
+    opacity: 0.8;
+}
+
+/* Pagination Styling */
+.pagination {
+    margin: 0;
+}
+
+.page-link {
+    border: 2px solid #e9ecef;
+    color: #667eea;
+    border-radius: 50px;
+    margin: 0 3px;
+    padding: 10px 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.page-item.active .page-link {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-color: #667eea;
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.page-item.disabled .page-link {
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+    color: #6c757d;
+    opacity: 0.6;
+}
+
+/* Loading Spinner Styling */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    animation: spin 1s linear infinite;
+}
+
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Filters Section */
+.filters-section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+
+/* Actions Cell */
+.actions-cell {
+    white-space: nowrap;
+    width: 180px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .book-dashboard {
+        padding: 10px;
+    }
+
+    .dashboard-title {
+        font-size: 1.8rem;
+    }
+
+    .dashboard-header {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .dashboard-header .d-flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .filters-section {
+        padding: 15px;
+    }
+
+    .table-responsive {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .actions-cell {
+        white-space: normal;
+        width: auto;
+    }
+
+    .actions-cell .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .actions-cell .btn:last-child {
+        margin-bottom: 0;
+    }
+
+    .modal-dialog {
+        margin: 10px;
+    }
+
+    .modal-body {
+        padding: 20px 15px;
+    }
+
+    .page-link {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .dashboard-title {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+    }
+
+    .table td,
+    .table th {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .status-badge,
+    .genre-badge {
+        font-size: 0.75rem;
+        padding: 3px 8px;
+    }
+
+    .modal-header,
+    .modal-footer {
+        padding: 15px;
+    }
+
+    .modal-title {
+        font-size: 1.25rem;
+    }
+}
+
+/* Card Mobile Layout */
+@media (max-width: 768px) {
+    .table thead {
+        display: none;
+    }
+
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .table tr {
+        border: 2px solid #e9ecef;
+        border-radius: 15px;
+        padding: 15px;
+        margin-bottom: 15px;
+        background: white;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+    }
+
+    .table td {
+        border: none;
+        text-align: center;
+        padding: 8px 0;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .table td:before {
+        content: attr(data-label);
+        position: absolute;
+        top: 8px;
+        left: 15px;
+        text-align: left;
+        font-weight: 600;
+        color: #2c3e50;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+    }
+
+
+    .actions-cell {
+        text-align: left !important;
+        padding-left: 15px !important;
+    }
+
+    .actions-cell:before {
+        content: "Actions";
+    }
+
+    .table td[data-label="Title"]:before {
+        content: "Title";
+    }
+
+    .table td[data-label="Author"]:before {
+        content: "Author";
+    }
+
+    .table td[data-label="Genre"]:before {
+        content: "Genre";
+    }
+
+    .table td[data-label="Published Year"]:before {
+        content: "Year";
+    }
+
+    .table td[data-label="Status"]:before {
+        content: "Status";
+    }
+}
+
+/* Enhanced Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card,
+.alert,
+.filters-section {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Custom Scrollbar */
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/* Focus States */
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Invalid Form States */
+.form-control.is-invalid,
+.form-select.is-invalid {
+    border-color: #fd79a8;
+    box-shadow: 0 0 0 0.2rem rgba(253, 121, 168, 0.25);
+}
+
+.invalid-feedback {
+    color: #e84393;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
