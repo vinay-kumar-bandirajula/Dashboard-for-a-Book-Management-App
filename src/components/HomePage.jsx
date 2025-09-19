@@ -68,7 +68,7 @@ const HomePage = () => {
       setError("Failed to fetch books.");
       showNotification("Failed to fetch books.", "error");
     } finally {
-      setLoading(false);
+      setIsFetching(false);
     }
   };
 
@@ -164,7 +164,7 @@ const HomePage = () => {
     setError(`Failed to ${editingBook ? 'update' : 'add'} book.`);
     showNotification(`Failed to ${editingBook ? 'update' : 'add'} book.`, 'error');
   } finally {
-    setLoading(false);
+    setIsSaving(false);
   }
 };
 
@@ -227,7 +227,7 @@ const handleDeleteBook = async () => {
     setError("Failed to delete book.");
     showNotification("Failed to delete book.", "error");
   } finally {
-    setLoading(false);
+    setIsDeleting(false);
   }
 };
 
@@ -516,7 +516,7 @@ const handleDeleteBook = async () => {
                 ></button>
               </div>
               <div className="modal-body">
-                <div onSubmit={handleAddEditSubmit}>
+                <form onSubmit={handleAddEditSubmit} noValidate>
                   <div className="row">
                     <div className="col-md-6">
                       <div className="mb-3">
@@ -605,7 +605,7 @@ const handleDeleteBook = async () => {
                       <div className="invalid-feedback">{statusError}</div>
                     )}
                   </div>
-                </div>
+                </form>
               </div>
               <div className="modal-footer">
                 <button
